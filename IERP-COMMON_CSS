@@ -105,7 +105,6 @@ input:focus {
     top: 13.5%;
     left: 0;
     background-color: #EAEAEA;
-    overflow-x: hidden;
     transition: 0.2s;
     border-bottom: 1px solid  #C3C3C3;
     border-right: 1px solid  #C3C3C3;
