@@ -1,0 +1,1008 @@
+/*
+ * File Name     : dynamicPage.css
+ * Modified Date : 28/02/2017 
+ * Author        : Dhanissh S
+ * Purpose       : Style For the IERP-COMMON TO ALL PAGE
+ */
+/*STYLE FOR ENTIRE PAGE*/
+.pageDiv {
+    width: 96%;
+    padding-top: 3px;
+    margin-left: 2%;
+}
+/*FONT FOR MENU*/
+.innerMenuDiv {
+    font-family: arial,verdana;
+}
+/*FONTS FOR WEBPAGE*/
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/Roboto-Light.ttf);
+    src: url(../fonts/Roboto-Medium.ttf);
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Segoe UI;
+    src: url(../fonts/segoeuisl.ttf);
+   }
+   @font-face {
+    font-family: Segoe UI-Light;
+    src: url(../fonts/Segoe-UI-Light.ttf);
+   }
+ @font-face {
+    font-family: Segoe UI-Regular;
+    src: url(../fonts/segoe-ui-regular.ttf);
+   }
+   @font-face {
+    font-family: Trial Font;
+    src: url(../fonts/ufonts.com_orkney-regular.eot);
+   }
+   /*SET BACKGROUND COLOR OF TEXTBOX*/
+input:focus {
+    background-color: #f2f2f2;
+}
+
+.dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody::-webkit-scrollbar{
+    background-color: #e9ebee;
+}
+.dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody::-webkit-scrollbar-thumb {
+  background-color: #c8d2ea;
+  height: 15px;
+}/*
+*/.dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody::-webkit-scrollbar-button{
+    background-color: #c8d2ea;
+    z-index: 1;
+}/*
+*/.dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody::-webkit-scrollbar-track{
+    background-color: #EAEAEA;
+}
+.dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody:scrollbar-arrow-color{
+    color: red;
+}
+/*Right side menu*/
+#menuFlip
+{
+    padding:8px;
+    padding-top:1px;
+    text-align:center;
+    background-image: url('images/linkbar.png');
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 150px;
+    position:fixed !important;
+    color: #fff;
+    font-size: 10pt;
+    cursor: pointer;
+    top:13.5%;
+    transition: 0.2s;
+}
+/*Active search*/
+#searchFlip
+{
+    display:none;
+    width: 11px;
+    height: 150px;
+    background-image: url(images/searchbar.png);
+    background-repeat: no-repeat;
+    position:fixed !important;
+    left: 98.79%;
+    top: 105px;
+    padding: 8px;
+    padding-top: 1px;
+    font-size: 10pt;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+    padding-left: 20px;
+}
+.sideNavigation {
+    font-family: myFirstFont;
+    font-weight: lighter;
+    height: 75%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 13.5%;
+    left: 0;
+    background-color: #EAEAEA;
+    overflow-x: hidden;
+    transition: 0.2s;
+    border-bottom: 1px solid  #C3C3C3;
+    border-right: 1px solid  #C3C3C3;
+    z-index: 95;
+    overflow-y: auto;
+}
+
+#menuFlip {
+    padding: 9px;
+    z-index: 1;
+}
+/*For header Images*/
+.headerimages
+{
+    font-family: myFirstFont;
+    font-weight: 100;
+    margin: 0px;
+    margin-bottom: 0px;
+    cursor:pointer;
+}
+#signOut{
+    padding-left: 12px;
+}
+img#signOut {
+    padding-left: 15px;
+    padding-right: 9px;
+}
+.headerSubText
+{
+    font-family: Segoe UI;
+    font-size:8pt;
+    color: #2B2B2B;
+    cursor:pointer;
+    padding-bottom: 10px;
+    vertical-align:bottom;
+}
+
+/*@media screen and (max-height: 450px) {
+    .sideNavigation {padding-top: 15px;}
+    .sideNavigation a {font-size: 15px;}
+}*/
+
+@media screen and (max-height: 450px) {
+    
+    #searchFlip{padding-top: 15px;position: fixed;}
+    #searchFlip{font-size: 15px;}
+}
+.hometitle {
+   font-family: myFirstFont;
+}
+span#hometitle {
+    padding-right: 25px;
+}
+
+/*Main Header Logo*/
+.titleHeaderLogo{
+    position: fixed;
+    background: url('images/HeaderLogo.jpg') no-repeat;
+    width: 100%;
+    height: 72px;
+    top: 0%;
+}
+table#adminGroup {
+    font-size: 10px;
+    font-weight: lighter;
+    position: fixed;
+    top: 5%;
+}
+.headerHome{
+    height: 70px;
+    font-family: 'Josefin Slab', serif;
+    background-color: #FFFFFF;
+    border-bottom:  1px solid grey;
+    border-bottom: 1px solid grey;
+    
+}
+.headerDiv{
+    margin-top: 3px;
+    width: 100%;
+    z-index: -2;
+}
+
+.dynamicDiv
+{
+    height:87%;
+    background-color: #eaeaea;
+    
+}
+.MainBlock
+{
+    position: relative;
+    width: 100%;
+}
+/*Footer Block*/
+#IndevFooter {
+    padding-top: 5px;
+    text-align: center;
+    height: 3%;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-top: 1px solid grey;
+}
+/*Footer Indev Url*/
+#indevurl{
+    text-decoration: none;
+    color: #00188F; 
+    cursor:pointer;
+}
+
+.tableDiv {
+    margin-right: auto;    
+    margin-left: auto;        
+    max-width: 100%;    
+    min-width: 100px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 6%;
+    font-size: 12px;
+    float: right;
+}
+
+.expandDiv
+{
+    font-family: arial,verdana;
+    text-align: right;
+    padding-right: 2px;
+    cursor: pointer;
+    background-color: #EAEAEA;
+    color: #C35817;
+    font-weight: bold;
+    font-size: 8pt;
+    padding-right: 3px;
+    padding-top: 2px;
+}
+#mainmenudiv{
+    font-family: slim;
+/*    font-weight:500;*/
+}
+#adminGroup{
+    cursor:pointer;
+}
+.dynamicBorder{
+    border: 1px solid darkgray;
+    width: 100%;
+    border-top: none;
+    margin-left: 3px;
+}
+.dynamicWrapper{
+    width: 100%;
+    margin-right: 3px;
+
+}
+.pageheader{
+    margin: 0px;
+    padding-top:0px;
+    padding-left: 0.3em;
+    padding-right: 0.5em;
+    padding-bottom: 5px;
+}
+@media only screen and (min-width: 320px) {
+    /* For desktop: */
+    .pageheader{
+    position: relative;
+    width: 100%;
+    left: 0%;
+    right: 1%;
+    margin-top:0.80%;
+    }
+}
+.pageTitle{
+    background-color: #3B5A9A;
+    font-family: Segoe UI;
+    margin-left: 3px;
+    margin-right: 5px;
+    font-size: 14px;
+    padding-bottom:6px;
+    top: 2%;
+    padding-top:4px;
+    color: #FFFFFF;
+    border-top:1px solid #FFFFFF;
+    border-radius: 3px;
+    font-weight: 600;
+    padding-left: 14px;
+}
+
+.pageheader tbody{
+
+    width:100%;
+}
+.pageheader tbody td    {
+    background-color: #3B5A9A;
+    color: #FFFFFF;
+    font-family: Segoe UI;
+    font-size: 0.90em;
+    font-weight: 400;
+    border-bottom: 1px solid grey;
+    line-height: 22px;
+    padding-left: 14px;
+   
+}
+.pageheader tbody td input[type="text"]{
+    width: 125%;
+    color: black;
+    height: 23px;
+    text-transform: uppercase;
+    outline: none;
+    border-radius: 2px;
+    border: 1px solid #C7C7C7;
+    margin-top: -8px;
+    margin-bottom: -5.58px;
+    border-bottom: 0px;
+    text-indent: 5px;
+    margin-left: -57px;
+    font-size: 9pt;
+    
+}
+
+.pageheader tbody td select:focus{
+    background-color: #ffa;
+}
+
+table.mainpagetable {
+    overflow: hidden;
+    width: 100%;
+    margin-top: -7px;
+}
+.mainpagetable th{
+    padding-left: 6px;
+    margin-top: 0.5em;
+    color: #3B5A9A;
+}
+
+.pageheader tbody tr td:last-child{
+    padding-right: 10px;
+}
+
+body{
+    background-color: #ffffff;
+}
+#searchParameters{
+    height: 26px;
+    width: 100%;
+    background-color: white;
+    font-size: 13.33px;
+    font-family: Arial;
+    border: 1px solid #b3b3b3;
+    border-style: solid;
+    outline: none;
+}
+.searchNavigation{
+    width: 0;
+    position: fixed;
+    margin-left: 30px;
+    margin-top: 0px;
+    top: 106px;
+    right: 0;
+    background-color: transparent;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    cursor: pointer;
+    height: 462px;
+    border-bottom: 1px solid #C3C3C3;
+    transition: 0.2s;
+}
+table#searchgrid {
+    width: 100%;
+    position: absolute;
+    font-size: 10pt;
+    background-color: #FFFFFF;
+    z-index: -1;
+    border: 1px solid  #C3C3C3;
+    font-family: Segoe UI;
+     color: #000000; 
+    font-size: 8pt;
+    line-height: 20px;
+}
+#searchgrid thead tr th {
+    background-color: #EAEAEA;
+    text-align: center;
+    color: #3B5997;
+    font-weight: 500;
+    font-size: 9pt;
+    line-height: 20px;
+}
+tbody.searchable tr td:first-child {
+    background-color: #EAEAEA;
+    text-align: center;
+}
+tbody.searchable tr td:nth-child(n+2) {
+    text-indent: 8px;
+}
+tbody.searchable tr:hover {
+    background-color: #EAEAEA;
+    color: #65A448;
+}
+.required:after
+{
+    content: " *";
+    color: yellow;
+}
+.readOnly
+{
+    background:#C8D2EA;
+}
+#loadingChangePasswordDiv
+{
+    display: none;
+    z-index:96;
+    position: fixed;
+    top: 70%;
+    left: 20%;
+    background-color: #FFFFFF;
+    border-radius:6px;
+    border: 2px #3B5A9A solid;
+}
+#searchLabel
+{
+    width:100%;
+    border-left-width: 0px;
+    height: 28px;
+    border-right-width: 0px;
+    border-bottom: 0px;
+    font-size: 10pt;
+    outline: none;
+    border: 0px;
+    height: 20px;
+}
+#div.fill-screen {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    overflow: hidden;
+}
+div.fill {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+#resize {
+   
+    overflow: hidden;
+}
+.userHistory{
+    background: url('images/tool.png') no-repeat;
+    position: fixed;
+    right: 30px;
+    width: 16px;
+    height: 15px;
+    padding-top: 13px;
+    cursor: pointer;
+    margin-top: 3px;
+    margin-top: 2px;
+} 
+
+.userHistoryTable {
+    font-size:12px;
+    color:#333333;
+    width:100%;
+    border-collapse: collapse;
+}
+.userHistoryTable th {
+    font-size:11px;
+    background-color:#cadffa;
+    padding:2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    text-align:center;
+}
+.userHistoryTable tr {
+    background-color:white;
+}
+.userHistoryTable td {
+    font-size:12px;
+    padding:2px;
+    border-right: 1px solid #3B5A9A;
+    border-bottom:1px solid #3B5A9A;
+    border-left:1px solid #3B5A9A;
+    text-align: center;
+}
+span.k-datetimepicker,span.k-datepicker{
+    width: 100%;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: 2px;
+    border-radius: 2px;
+}
+.k-datetimepicker .k-picker-wrap{
+    border-left: 0px;
+}
+span.k-picker-wrap.k-state-default{
+    border-left: 0px;
+}
+.bootstrap-datetimepicker-widget table td.day:hover{
+    background-color: #faebcc !important;
+}
+.bootstrap-datetimepicker-widget table td{
+    color: black !important;
+}
+.bootstrap-datetimepicker-widget table {
+    background-color: #EAEAEA;
+    
+}
+table.dataTable thead th,table.dataTable thead td{/* padding:7px 18px; */border-bottom:1px solid #111;}
+ table.mainpagetable tr.header-tr:first-child{
+    background-color: #000;
+}
+ul#subMenuList li:last-child{
+    background: url(images/lastnode.png) no-repeat;
+}
+#subMenuList
+{
+    font-size: 12px;
+    margin-left: -3px;
+    color: #213769;
+}
+#subMenu-div
+{
+    position:relative;
+    overflow: auto;
+    width: 99%;
+    height:100%;
+    padding-right: 2px;
+}
+ul#subMenuList ul 
+{
+    margin-left: 10px;
+}
+#subMenu
+{
+    width:100%;
+    height:100%;
+}
+#subMenuList
+{
+    font-size: 12px;
+    margin-left: -3px;
+    color: #213769;
+}
+#subMenu-div
+{
+    position:relative;
+    overflow: auto;
+    width: 99%;
+    height:100%;
+    padding-right: 2px;
+}
+ul#subMenuList, ul#subMenuList ul 
+{
+    list-style-type: none;
+    background: url(images/vline.png) repeat-y;
+    padding: 0;
+}
+ul#subMenuList ul 
+{
+    margin-left: 10px;
+}
+ul#subMenuList li
+{
+    margin: 0;
+    padding: 0 12px;
+    line-height: 20px;
+    background: url(images/node.png) no-repeat;
+    color: #369;
+    font-weight: bold;
+    cursor: pointer;
+}
+ul#subMenuList li a 
+{
+    white-space: nowrap;
+    text-decoration:none;
+    color:#057fac;
+}
+ul#subMenuList li a:hover 
+{
+    text-decoration:none;
+    color:#E9B225;
+    font-weight: bold;
+}
+ul#subMenuList li a .active
+{
+    color:#E9B225;
+}
+ul#subMenuList li.last {
+    background:#EAEAEA url(images/lastnode.png) no-repeat;
+}
+ul#subMenuList li:last-child {
+    background:#EAEAEA url(images/lastnode.png) no-repeat;
+}
+.innerMenuDiv
+{
+    margin-right:0;
+    margin-top:0;
+    height:89%;    
+    overflow: hidden;
+    background-color: #EAEAEA;
+}
+#treeMenuList
+{
+    font-size: 12px;
+    margin-left:100px;
+    color: #213769;
+}
+ul#treeMenuList, ul#treeMenuList ul 
+{
+    list-style-type: none;
+    background: url(images/vline.png) repeat-y;
+    padding: 0;
+}
+ul#treeMenuList ul 
+{
+    margin-left: 10px;
+}
+
+ul#treeMenuList li
+{
+    margin: 0;
+    padding-left: 12px;
+    line-height: 20px;
+    color: #369;
+    font-weight: bold;
+    cursor: pointer;
+}
+ul#treeMenuList li a 
+{
+    white-space: nowrap;
+    text-decoration:none;
+    color:#057fac;
+}
+ul#treeMenuList li a:hover 
+{
+    text-decoration:none;
+    color:#E9B225;
+    font-weight: bold;
+}
+ul#treeMenuList li a .active
+{
+    color:#E9B225;
+}
+
+/*DETAIL GROUP BUTTON*/
+a.dt-button{
+    position: relative !important;
+    display: inline-block !important;
+    margin-right: 0.333em !important;
+    border-radius: 2px !important;
+    cursor: pointer !important;
+    font-size: 0.88em !important;
+    color: red !important;
+    white-space: nowrap !important;
+    overflow: hidden;
+    text-decoration: none !important;
+    outline: none !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border: none !important;
+}
+a.dt-button.excelUploadbtn span{
+    background: url(images/export.png) no-repeat center right;
+    padding: 10px;
+}
+a.dt-button.excelDownloadbtn span{
+    background: url(images/import.png) no-repeat center right;
+    padding: 10px;
+}
+a.dt-button.addBtn span{
+    background: url(images/addRow.png) no-repeat center right;
+    padding: 10px;
+}
+a.dt-button.pasteBtn span{
+    background: url(images/paste.png) no-repeat center right;
+    padding: 10px;
+}
+a.dt-button.removeBtn span{
+    background: url(images/deleteRow.png) no-repeat center right;
+    padding: 10px;
+}
+
+select {
+    height: 20px;
+    overflow: auto;
+}
+.hide_column{
+    display: none;
+}
+.pagedetail table{
+    margin: 0 auto;
+    width: 100%;
+    clear: both;
+    border-collapse: collapse;
+    table-layout: fixed; 
+}
+input[type="text"],select{
+    width: 100%;
+}
+.ui-tabs .ui-tabs-panel {
+    padding: 0px !important;
+    padding-top: 2px !important;
+
+}
+.ui-widget-content{
+    border:0px !important;
+}
+.selected td{
+    background-color: #DBAC9C !important;  
+}
+
+.dataTables_wrapper .dataTables_info{
+    
+   float: left;
+   font-family: Segoe UI-Regular;
+   font-size: 9pt;
+   text-indent: 7px;
+}
+html, body,form, table, label ,input[type="text"],select{ 
+    overflow: hidden;
+     font-family:Segoe UI; 
+    font-size: 10pt;
+    
+}/*
+*/.dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody th, .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody td{
+    
+      border-left: 1px solid #CCCCC9;
+      border-bottom: 1px solid #CCCCC9;
+      border-top: 0px;
+}
+table.dataTable thead th, table.dataTable tfoot th{
+     border-left: 1px solid #CCCCC9;
+      border-bottom: 1px solid #CCCCC9;
+    
+}
+.detailPageTitle{
+    background-color: #EAEAEA;
+    font-family: Segoe UI;
+    font-size: 10pt;
+    padding-left: 10px;
+    padding-top: 0px;
+    color: #3B5A9A;
+    font-weight: 500;
+    }
+.pagedetail {
+    background-color: #e9ebee;
+    text-align: center;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+    margin-top: 2px;}
+.dataTable tbody td  {
+    padding: 0px !important;
+    border: 0px;
+}
+.dataTable tbody td input {
+    border: 0px;
+}
+.dataTable td select {
+    border: 0px;
+}
+.dataTables_wrapper .dataTables_filter{
+    color: #e9ebee;
+    display: inline;
+    margin-left: 70%;
+    height: 23px;
+}
+.dt-buttons{
+    float: right;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+.detailRequired{
+    color: yellow;
+}
+.dataTables_filter input{
+    background: #fff url(images/datable-search.jpg) no-repeat;
+    background-position: 284px;
+    height: 24px;
+    width: 25em;
+    border: 0px;
+    outline: none;
+}
+.dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody th, .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody td:first-child{
+    background-color: rgba(204, 204, 201, 0.23);
+}
+.ui-tabs .ui-tabs-nav li{
+    width: 19em;
+    margin: 0px !important;
+    font-size: 8pt;
+    line-height: 18px;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    padding: 2px;
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button{
+    font-family: Segoe UI;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    color: black;
+    border-top: 0px;
+    border-bottom: 0px;
+    height: 18px;
+    background-color: white;
+    text-indent: 5px;
+}
+.dataTables_scroll input[type="checkbox"] {
+    height: 10px;
+}
+.ui-widget-header {
+    background-color: #e9ebee;
+    border: 0px;
+}
+.center{
+    text-align:center;
+}
+.detailName {
+    font-family: Segoe UI;
+    display: inline;
+    font-size: 8pt;
+    color: #FFFFFF;
+    width: 25%;
+    padding-top: 4px;
+    position: fixed;
+    padding-right: 19%;
+    left: 2%;
+}
+.serialNoChildDiv {float: left;}
+
+.numberRight { text-align: left; float: left;}
+
+.pageheader tbody select{
+    width: 125%;
+    color: #3B5A9A;
+    border-radius: 2px;
+    margin-bottom: -2%;
+    padding-bottom: 2%;
+    margin-top: -7px;
+    border-bottom: 0px;
+    height: 24.1px;
+    border-radius: 2px;
+    margin-left: -57px;
+}
+.dataTable tbody td input:focus{
+    background-color:rgb(255, 229, 180);
+    outline: none;
+}
+.dataTable td select:focus{
+    background-color:rgb(255, 229, 180);
+    outline: none;
+}
+.headerTitle>th{
+    padding-top: 0px;
+    padding-bottom: 8px;
+    font-size: 10pt;
+    border-bottom: 3px solid #3B5A9A;
+    font-weight: 500;
+}
+body{
+    background-color: #ffffff;
+}
+.dataTables_wrapper {
+    background-color: #3b5998 !important ;
+}
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+    background-color: #e9ebee !important;
+}
+
+.ui-tabs .ui-tabs-nav {
+    padding: 0px;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    padding: 2px;
+}
+#detailGroup th{
+    /* text-align: center; */
+    /* font-size: 11px; */
+    font-family: Segoe UI;
+    font-weight: 500;
+    color: #3B5A9A;
+}
+table.dataTable thead th, table.dataTable thead td {
+    padding: 0.5px;
+}
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited,
+a.ui-button,
+a:link.ui-button,
+a:visited.ui-button,
+.ui-button {
+    font-family: Segoe UI;
+    color: #7F7F7F;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    height: 20px !important;
+    border: 0px;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor, .ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor, .ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor{
+    border: 1px solid rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.9);
+    text-align: center;
+    color: #3B5A9A;
+    cursor: pointer; 
+    white-space: nowrap;  
+    width: 100%;
+}
+.ui-widget-content {
+    background: #ccc ; 
+}
+.detailRequired{
+    color: red;
+}
+.buttonDiv input {
+    background-color: #CADFFA;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f5f9), color-stop(100%,#cadffa));
+    border: 1px solid #B1BBCB;
+    color: #2A2A2A;
+    font-family: Segoe UI;
+    font-size: 9pt;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+    height: 28px;
+    text-align: center;
+    font-weight: bold;
+}
+@media only screen and (min-width: 800px) {
+    .buttonDiv{
+        position: fixed;
+        right: 1%;
+        margin-top:0.80%;
+    }
+}
+.headerTitle>th>label {
+    margin-top: 3px;
+}
+.ms-options-wrap > button:focus,
+.ms-options-wrap > button {
+    width: 125%;
+    text-align: left;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    color: #aaa;
+    outline: none;
+    white-space: nowrap;
+    margin-left: -57px;
+    border-radius: 3px;
+    height: 23px;
+    position: relative;
+    margin-top: -3px;
+    border-bottom: 0px;
+}
+.ms-options-wrap > .ms-options{
+    position: absolute;
+    left: 0;
+    width: 124%;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    background: white;
+    z-index: 2000;
+    border: 1px solid #aaa;
+    margin-left: -55px;
+}
+.ms-options-wrap > .ms-options > ul input[type="checkbox"]{
+    margin: 0 5px 0 0;
+    position: absolute;
+    left: 4px;
+    top: 10px;
+}
+.ms-options-wrap > .ms-options > ul label{
+    position: relative;
+    display: inline-block;
+    width: 113%;
+    padding: 5px;
+    margin: 1px 0;
+    border: 1px dotted transparent;
+    color: black;
+    vertical-align: middle;
+}
+.Button_Disabled{
+    background: #FFFFFF !important;
+    border: 1px solid #B1BBCB !important;
+    color: #707070 !important;
+    font-family: Segoe UI !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    border-radius: 4px !important;
+    outline: none !important;
+    height: 28px !important;
+    text-align: center !important;
+}
+
